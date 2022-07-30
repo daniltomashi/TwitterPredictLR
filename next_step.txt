@@ -1,0 +1,3 @@
+I need to make model predict 0,0 if there is values less than 0
+I need to make this model faster
+Maybe i need to try another model

@@ -104,6 +104,8 @@ while was_exception:
             if tweets_and_id.data != None:
                 drop_or_no = 0
                 for i in tweets_and_id.data:
+                    if i.public_metrics['like_count'] < 10:
+                        continue
                     if i.id not in user_tweets['text_id']:
                         tweets.loc[j, 'id'] = user['id']
                         tweets.loc[j, 'screen_name'] = user['screen_name']
